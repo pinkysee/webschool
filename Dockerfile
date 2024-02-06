@@ -12,4 +12,4 @@ RUN npm run build
 WORKDIR /schoolweb/.output/server
 
 CMD [ "node", "index.mjs"]
-EXPOSE 80
+EXPOSE 3000

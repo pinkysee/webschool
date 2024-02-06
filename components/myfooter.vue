@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p><span>Шк</span>ола 102</p>
+        <div class="footerp"><p><span>Шк</span>ола 102</p></div>
         <div class="phone">
             <div class="phonesvg">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,14 +26,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+footer p {
+
+    font-size: 36px;
+}
+footer p span {
+    color: aqua;
+}
 footer{
+    position: relative;
     width: 100%;
     height: 176px;
     background-color: #F3F5FD;
 }
 .phone {
     display: flex;
+    position: absolute;
+    right: 30px;
+    top: 30%;
 }
 .phonesvg {
     position: relative;

@@ -45,7 +45,7 @@
             </div>
         </nav> -->
         <div class="navbar">
-            <a class="home"><span>Шк</span>ола 102</a>
+            <a class="home" :href="`/${basePath}`"><span>Шк</span>ола 102</a>
             <nav class="nav">
                 <ul id="glul" class="glul glulhidden">
                     <li><a @click="sved()" class="sveda">Сведения об организации <svg id="svgarr" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,8 +87,24 @@
                         </ul>
                     </li>
                     <li><a class="osna">Мы во Вконтакте</a></li>
-                    <li><a class="osna">Другое</a></li>
-                    <li><a class="osna">Войти</a></li>
+                    <li><a class="sveda" @click="svedot()">Другое <svg id="svgarrot" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z" fill="white"></path>
+</svg> </a>
+                    <ul id="svedoth"  class="sved">
+                        <li>Text 1</li>
+                        <li>Text 1</li>
+                        <li>Text 1</li>
+                        <li>Text 1</li>
+                        <li>Text 1</li>
+                    </ul>
+                    </li>
+                    <li ><a class="osna" :href="`${basePath}/login`">Войти</a></li>
+                    <li @click="svedprof()"><a class="sveda">Корниевский А.</a>
+                        <ul id="svedprof" class="sved">
+                            <li><a :href="`${basePath}/profile`">Профиль</a></li>
+                            <li><a>Выйти</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div id="menuicon" @click="changeicon()" class="menuicon"><span></span></div>
@@ -97,7 +113,8 @@
 <script>
 export default {
     data() {
-        return {}
+        return {
+        }
     },
     methods: {
         changeicon() {
@@ -109,11 +126,28 @@ export default {
             document.getElementById("sved").classList.toggle('svedactive')
             document.getElementById("svgarr").classList.toggle('svgarr')
             document.body.classList.toggle('nofullclose')
+        },
+        svedot() {
+            document.getElementById("svedoth").classList.toggle('svedactive')
+            document.getElementById("svgarrot").classList.toggle('svgarr')
+        },
+        svedprof() {
+            document.getElementById("svedprof").classList.toggle('svedactive')
         }
-    }
+    },
+    computed: {
+        basePath() {
+            // Получите базовый путь из конфигурации Nuxt.js
+            return this.$config.basePath || '';
+        }
+    },
 }
 </script>
 <style>
+
+#svgarrot { 
+    display: none;
+}
 .menuicon {
     position: absolute;
     width: 25px;
@@ -198,6 +232,16 @@ export default {
     transform: translateY(0);
 }
 
+.glul li:nth-child(3):hover .sved {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.glul li:nth-child(5):hover .sved {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
 .glul {
     position: absolute;
     right: 30px;
@@ -214,6 +258,10 @@ export default {
 .sved li {
     margin: 0px 0px 0px 0px;
     height: 30px;
+}
+
+#svgarr {
+    display: none;
 }
 
 a {
@@ -249,7 +297,18 @@ ul {
     left: 0%;
 }
 
+.sved li {
+    position: relative;
+    height: auto;
+}
+
 @media (max-width: 761px) {
+    #svgarr {
+        display: block;
+    }
+    #svgarrot {
+        display: block;
+    }
     .navbar {
         flex-direction: column;
     }
@@ -258,9 +317,11 @@ ul {
         visibility: visible;
         z-index: 12;
     }
+
     .glulhidden {
-    display: none;
-}
+        display: none;
+    }
+
     .glul {
         position: relative;
         flex-direction: column;
@@ -280,10 +341,12 @@ ul {
         color: white;
         font-weight: 600;
     }
+
     .svgarr {
         transition: all 0.3s ease;
         transform: rotate(180deg);
     }
+
     .svedactive {
         position: relative;
         visibility: visible;
@@ -293,23 +356,26 @@ ul {
         border-radius: 0;
         background-color: #735FF1;
     }
+
     .glul li {
         position: relative;
         width: 100%;
     }
+
     .sveda svg {
         position: absolute;
         right: 5px;
         top: 3px;
     }
-    .sveda { 
+
+    .sveda {
         display: block;
     }
+
     .svedactive li {
         position: relative;
         height: auto;
         margin-left: 5px;
     }
 
-}
-</style>
+}</style>

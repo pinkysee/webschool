@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var rect = animatedDiv.getBoundingClientRect();
       var windowHeight = window.innerHeight;
   
-      if (rect.top < windowHeight * 1) {
+      if (rect.top < windowHeight * 1.25) {
         animatedDiv.classList.add('show');
         window.removeEventListener('scroll', checkVisibility);
       }
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var rect = animatedDiv.getBoundingClientRect();
       var windowHeight = window.innerHeight;
   
-      if (rect.top < windowHeight * 1) {
+      if (rect.top < windowHeight * 1.25) {
         animatedDiv.classList.add('show');
         window.removeEventListener('scroll', checkVisibility);
       }

@@ -1,5 +1,5 @@
 <template lang="">
-    <nv />
+    <navbar />
     <div class="container">
         <a :href="this.$config.public.API_URL + '/docs/' + item.Path" v-for="item in Docs"><span></span>{{ item.Name }}</a>
 

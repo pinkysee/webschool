@@ -4,10 +4,21 @@ body {
 }
 @font-face {
     font-family: "montserrat";
-    src: url("./Montserrat-VariableFont_wght.ttf") format("truetype");
+    src: url("/allasset/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-    
+
+}
+
+@font-face {
+    font-family: "montserratweight";
+    src: url("../public/allasset/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+* {
+    font-family: montserrat;
 }
 body.close{
     width: 99vw;

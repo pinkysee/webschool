@@ -1,5 +1,5 @@
 <template lang="">  
-    <nv />
+    <navbar />
     <div class="cont">
         <table>
             <tr>
@@ -131,9 +131,10 @@ export default {
 </script>
 <style scoped>
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 20px;
+    font-family: montserrat;
 }
 .imgcontainer {
     display: flex;
@@ -153,11 +154,12 @@ th {
     width: 300px;
     padding: var(--apadding);
     border-top-left-radius: 12px;
-    border: 1px solid var(--bgcolorhover);
+    border: 2px solid black;
     text-align: start;
 }
 table  {
-    color: white;
+    color: black;
+    font-family: montserrat;
     border: 1px  solid rgb(65, 65, 65);
     font-size: 15px;
     font-weight: 100;
