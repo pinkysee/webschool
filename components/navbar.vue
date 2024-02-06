@@ -144,10 +144,10 @@ export default {
 }
 </script>
 <style>
-
-#svgarrot { 
+#svgarrot {
     display: none;
 }
+
 .menuicon {
     position: absolute;
     width: 25px;
@@ -237,11 +237,13 @@ export default {
     opacity: 1;
     transform: translateY(0);
 }
+
 .glul li:nth-child(5):hover .sved {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
 }
+
 .glul {
     position: absolute;
     right: 30px;
@@ -306,9 +308,11 @@ ul {
     #svgarr {
         display: block;
     }
+
     #svgarrot {
         display: block;
     }
+
     .navbar {
         flex-direction: column;
     }
@@ -335,6 +339,24 @@ ul {
         background-color: #735FF1;
         height: 100vh;
         padding: 0;
+    }
+
+    .glul li:nth-child(1):hover .sved {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    .glul li:nth-child(3):hover .sved {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    .glul li:nth-child(5):hover .sved {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(0);
     }
 
     a {
