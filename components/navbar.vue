@@ -226,23 +226,7 @@ export default {
     visibility: hidden;
 }
 
-.glul li:nth-child(1):hover .sved {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
 
-.glul li:nth-child(3):hover .sved {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.glul li:nth-child(5):hover .sved {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .glul {
     position: absolute;
@@ -303,7 +287,25 @@ ul {
     position: relative;
     height: auto;
 }
+@media (min-width: 761px) {
+    .glul li:nth-child(1):hover .sved {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.glul li:nth-child(3):hover .sved {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.glul li:nth-child(5):hover .sved {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+}
 @media (max-width: 761px) {
     #svgarr {
         display: block;
@@ -325,7 +327,6 @@ ul {
     .glulhidden {
         display: none;
     }
-
     .glul {
         position: relative;
         flex-direction: column;
@@ -341,24 +342,6 @@ ul {
         padding: 0;
     }
 
-    .glul li:nth-child(1):hover .sved {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(0);
-    }
-
-    .glul li:nth-child(3):hover .sved {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(0);
-    }
-
-    .glul li:nth-child(5):hover .sved {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(0);
-    }
-
     a {
         color: white;
         font-weight: 600;
@@ -368,7 +351,9 @@ ul {
         transition: all 0.3s ease;
         transform: rotate(180deg);
     }
+    .sved {
 
+    }
     .svedactive {
         position: relative;
         visibility: visible;
