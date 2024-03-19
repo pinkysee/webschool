@@ -91,18 +91,14 @@
   <path d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z" fill="white"></path>
 </svg> </a>
                     <ul id="svedoth"  class="sved">
-                        <li>Text 1</li>
-                        <li>Text 1</li>
-                        <li>Text 1</li>
-                        <li>Text 1</li>
-                        <li>Text 1</li>
+                        <li v-for="item in Other"><a :href="`/other/` + item.Path">{{item.Text}}</a></li>
                     </ul>
                     </li>
-                    <li ><a class="osna" :href="`${basePath}/login`">Войти</a></li>
-                    <li @click="svedprof()"><a class="sveda">Корниевский А.</a>
+                    <li v-if="OkCheck == false"><a class="osna" :href="`${basePath}/login`">Войти</a></li>
+                    <li @click="svedprof()" class="profile" v-else><a class="sveda">{{ User.Name}}</a>
                         <ul id="svedprof" class="sved">
                             <li><a :href="`${basePath}/profile`">Профиль</a></li>
-                            <li><a>Выйти</a></li>
+                            <li><a :href="`${basePath}/`" @click="UnAuth()">Выйти</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -111,12 +107,25 @@
         </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
     data() {
         return {
+            Other: [],
+            User: [],
+            OkCheck: false,
         }
     },
     methods: {
+        async UnAuth() {
+            localStorage.removeItem('Bearer')
+        },
+        async GetOther() {
+            const a = await axios.get(this.$config.public.API_URL + "/getother").then(function (response) {
+                return response.data
+            })
+            this.Other = a
+        },
         changeicon() {
             document.getElementById("menuicon").classList.toggle('mactive')
             document.getElementById("glul").classList.toggle('glulhidden')
@@ -133,7 +142,25 @@ export default {
         },
         svedprof() {
             document.getElementById("svedprof").classList.toggle('svedactive')
-        }
+        },
+        async checkuser() {
+            if (!localStorage.getItem("Bearer")) { return false }
+            let a = await axios.get(this.$config.public.API_URL + "/checkuser", {
+                headers: {
+                    'Authorization': `${localStorage.getItem("Bearer")}`
+                }
+            })
+                .then(response => {
+                    if (response.status != 202) { return false }
+                    this.User = response.data
+                    this.User.Name = response.data.Name.split(" ")[0] + " " + response.data.Name.split(" ")[1]
+                    return true
+                })
+                .catch(error => {
+                    localStorage.removeItem("Bearer");
+                });
+            return a
+        },
     },
     computed: {
         basePath() {
@@ -141,9 +168,14 @@ export default {
             return this.$config.basePath || '';
         }
     },
+    async mounted() {
+        this.OkCheck = await this.checkuser()
+        await this.GetOther()
+    }
 }
 </script>
-<style>
+<style scoped>
+
 #svgarrot {
     display: none;
 }
@@ -301,10 +333,13 @@ ul {
 }
 
 .glul li:nth-child(5):hover .sved {
+
+}
+}
+.profile:hover .sved {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-}
 }
 @media (max-width: 761px) {
     #svgarr {

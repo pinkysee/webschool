@@ -27,7 +27,7 @@
                 <div class="newsitemleft">
                     <div class="newsitemlefttop">
                         <div class="newsitemlast">
-                            <p>Последнее</p>
+                            <p style="color: white;">Последнее</p>
                         </div>
                         <div class="newitemdate">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
@@ -84,7 +84,7 @@
                 <div class="newsitemright">
                     <div class="newsitemimg"><img src="../assets/bag.webp"></div>
                     <div class="newsitemleftread">
-                        <a>Перейти
+                        <a href="/article/invite">Перейти
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6 26H37.172L26.586 36.586C25.805 37.367 25.805 38.633 26.586 39.414C27.367 40.195 28.6335 40.195 29.4145 39.414L43.4145 25.414C44.1955 24.633 44.1955 23.3665 43.4145 22.586L29.4145 8.586C29.024 8.19551 28.512 8.00001 28 8.00001C27.4885 8.00001 26.9765 8.19551 26.586 8.586C25.805 9.367 25.805 10.6335 26.586 11.414L37.172 22L6 22C4.896 22 4 22.8955 4 24C4 25.1045 4.8955 26 6 26Z"
@@ -152,7 +152,7 @@
                 <div class="newsitemright">
                     <div class="newsitemimg newsitemimgfood"><img src="../assets/food.webp"></div>
                     <div class="newsitemleftread">
-                        <a>Перейти
+                        <a href="/article/food-in-school">Перейти
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6 26H37.172L26.586 36.586C25.805 37.367 25.805 38.633 26.586 39.414C27.367 40.195 28.6335 40.195 29.4145 39.414L43.4145 25.414C44.1955 24.633 44.1955 23.3665 43.4145 22.586L29.4145 8.586C29.024 8.19551 28.512 8.00001 28 8.00001C27.4885 8.00001 26.9765 8.19551 26.586 8.586C25.805 9.367 25.805 10.6335 26.586 11.414L37.172 22L6 22C4.896 22 4 22.8955 4 24C4 25.1045 4.8955 26 6 26Z"
@@ -220,7 +220,7 @@
                 <div class="newsitemright">
                     <div class="newsitemimg"><img src="../assets/place.webp"></div>
                     <div class="newsitemleftread">
-                        <a>Перейти
+                        <a href="/article/place">Перейти
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6 26H37.172L26.586 36.586C25.805 37.367 25.805 38.633 26.586 39.414C27.367 40.195 28.6335 40.195 29.4145 39.414L43.4145 25.414C44.1955 24.633 44.1955 23.3665 43.4145 22.586L29.4145 8.586C29.024 8.19551 28.512 8.00001 28 8.00001C27.4885 8.00001 26.9765 8.19551 26.586 8.586C25.805 9.367 25.805 10.6335 26.586 11.414L37.172 22L6 22C4.896 22 4 22.8955 4 24C4 25.1045 4.8955 26 6 26Z"
@@ -288,7 +288,7 @@
                 <div class="newsitemright">
                     <div class="newsitemimg"><img src="../assets/unname.webp"></div>
                     <div class="newsitemleftread">
-                        <a>Перейти
+                        <a href="/article/ovz">Перейти
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6 26H37.172L26.586 36.586C25.805 37.367 25.805 38.633 26.586 39.414C27.367 40.195 28.6335 40.195 29.4145 39.414L43.4145 25.414C44.1955 24.633 44.1955 23.3665 43.4145 22.586L29.4145 8.586C29.024 8.19551 28.512 8.00001 28 8.00001C27.4885 8.00001 26.9765 8.19551 26.586 8.586C25.805 9.367 25.805 10.6335 26.586 11.414L37.172 22L6 22C4.896 22 4 22.8955 4 24C4 25.1045 4.8955 26 6 26Z"
@@ -301,44 +301,94 @@
         </div>
         <h1 class="zag">F.A.Q</h1>
         <div id="faqblock1" class="faqblock faqblockclose faqblock1 hide" @click="faqactive(1)">
-            <div class="faqhgelp1>"><p>Как организовано школьное питание?</p><p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
-            <div class="faqhelp2"><svg id="faqsvg1" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
-                    fill="black" />
-            </svg></div>
+            <div class="faqhgelp1>">
+                <p>Как организовано школьное питание?</p>
+                <p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                    normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).</p>
+            </div>
+            <div class="faqhelp2"><svg id="faqsvg1" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
+                        fill="black" />
+                </svg></div>
             <div class="faqblockpoyasn"></div>
         </div>
         <div id="faqblock2" class="faqblock faqblockclose faqblock2 hide" @click="faqactive(2)">
-            <div class="faqhgelp1>"><p>Как организовано школьное питание?</p><p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
-            <div class="faqhelp2"><svg id="faqsvg2" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
-                    fill="black" />
-            </svg></div>
+            <div class="faqhgelp1>">
+                <p>Как организовано школьное питание?</p>
+                <p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                    normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).</p>
+            </div>
+            <div class="faqhelp2"><svg id="faqsvg2" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
+                        fill="black" />
+                </svg></div>
             <div class="faqblockpoyasn"></div>
         </div>
         <div id="faqblock3" class="faqblock faqblockclose faqblock3 hide" @click="faqactive(3)">
-            <div class="faqhgelp1>"><p>Как организовано школьное питание?</p><p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
-            <div class="faqhelp2"><svg id="faqsvg3" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
-                    fill="black" />
-            </svg></div>
+            <div class="faqhgelp1>">
+                <p>Как организовано школьное питание?</p>
+                <p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                    normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).</p>
+            </div>
+            <div class="faqhelp2"><svg id="faqsvg3" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
+                        fill="black" />
+                </svg></div>
             <div class="faqblockpoyasn"></div>
         </div>
         <div id="faqblock4" class="faqblock faqblockclose faqblock4 hide" @click="faqactive(4)">
-            <div class="faqhgelp1>"><p>Как организовано школьное питание?</p><p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p></div>
-            <div class="faqhelp2"><svg id="faqsvg4" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
-                    fill="black" />
-            </svg></div>
+            <div class="faqhgelp1>">
+                <p>Как организовано школьное питание?</p>
+                <p class="faqosntext">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                    normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).</p>
+            </div>
+            <div class="faqhelp2"><svg id="faqsvg4" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.6803 8.59293L30.0772 6.98994C29.8636 6.77588 29.6175 6.66919 29.3393 6.66919C29.0618 6.66919 28.8158 6.77588 28.6022 6.98994L16.0002 19.5913L3.39869 6.99028C3.18496 6.77622 2.93901 6.66953 2.66115 6.66953C2.38319 6.66953 2.13723 6.77622 1.92362 6.99028L0.320754 8.59337C0.106693 8.80699 0 9.05294 0 9.33091C0 9.60864 0.10703 9.8546 0.320754 10.0682L15.2626 25.0104C15.4762 25.2242 15.7223 25.331 16.0002 25.331C16.278 25.331 16.5236 25.2242 16.7371 25.0104L31.6803 10.0682C31.8939 9.85449 32 9.60853 32 9.33091C32 9.05294 31.8939 8.80699 31.6803 8.59293Z"
+                        fill="black" />
+                </svg></div>
             <div class="faqblockpoyasn"></div>
         </div>
         <myfooter />
     </div>
 </template>
+<script setup>
+    useHead({
+    title: "Школа 102 | Главная",
+    script: [
+        {
+            src:"./animated.js"
+        }
+    ]
+})
+</script>
 <script>
 export default {
     data() {
@@ -361,11 +411,11 @@ export default {
 }
 </script>
 <style scoped>
-
 .faqsvgactive {
     transition: all 0.5s ease;
     transform: rotate(180deg);
 }
+
 @font-face {
     font-family: "montserrat";
     src: url("../public/allasset/Montserrat-VariableFont_wght.ttf") format("truetype");
@@ -404,12 +454,15 @@ export default {
     transition: all 0.3s ease;
     z-index: 10;
 }
+
 .faqosntext {
     display: none;
 }
+
 .faqblockactive .faqosntext {
     display: block;
 }
+
 .navbar a {
     padding: 10px;
     text-decoration: none;
@@ -652,13 +705,16 @@ export default {
     justify-content: space-between;
     align-items: center;
 }
+
 .faqhelp2 {
     margin-left: auto;
     margin-right: 15px;
 }
+
 .faqblock p {
     margin-left: 15px;
 }
+
 .faqblockclose {}
 
 .faqblockopen {}
@@ -753,12 +809,15 @@ export default {
         display: block;
         height: auto;
     }
+
     .newsitemlefttop {
         margin-top: 15px;
     }
+
     .newsitemlast {
         display: none;
     }
+
     .newitemdate {
         margin-top: 15px;
     }
@@ -794,7 +853,7 @@ export default {
         background-color: #735FF1;
     }
 }
+
 .faqblockactive {
     height: auto;
-}
-</style>
+}</style>
